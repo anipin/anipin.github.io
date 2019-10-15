@@ -43,8 +43,12 @@
         This file is based on <a>https://github.com/tensorflow/tfjs-examples/tree/master/mobilenet</a>.
       </p>
       <p>
-        The classes of Landmarks are as follows: 
-        Class 0 : lion
+        The classes of Landmarks are as follows: <br>
+        Class 0 : lion <br>
+        Class 1 : math <br>
+        Class 2 : mudd <br>
+        Class 3 : pan <br>
+        Class 4 : uris <br>
       </p>
     </section>
 
@@ -57,13 +61,13 @@
       <p class='section-head'>Model Output</p>
 
       <div id="file-container" style="display: none">
-        Upload an image: <input type="file" id="files" name="files[]" multiple />
-        Sample Images are in Images directory 
+        Upload an image: <input type="file" id="files" name="files[]" multiple /> <br>
+        Sample Images are in Images directory <br>
       </div>
 
       <div id="predictions"></div>
 
-      <img style="display: none" id="cat" src="cat.jpg" width=192 height=192 />
+      <img style="display: none" id="lion" src="lion.jpg" width=192 height=192 />
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
