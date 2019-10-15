@@ -38,14 +38,14 @@ const demo = async () => {
   }
 
   // Make a prediction through the locally hosted cat.jpg.
-  const catElement = document.getElementById('cat2');
-  if (catElement.complete && catElement.naturalHeight !== 0) {
-    predict(catElement);
-    catElement.style.display = '';
+  const catElement2 = document.getElementById('cat2');
+  if (catElement2.complete && catElement2.naturalHeight !== 0) {
+    predict(catElement2);
+    catElement2.style.display = '';
   } else {
-    catElement.onload = () => {
-      predict(catElement);
-      catElement.style.display = '';
+    catElement2.onload = () => {
+      predict(catElement2);
+      catElement2.style.display = '';
     }
   }
   document.getElementById('file-container').style.display = '';
