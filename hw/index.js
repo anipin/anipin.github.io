@@ -37,6 +37,17 @@ const demo = async () => {
     }
   }
 
+  // Make a prediction through the locally hosted cat.jpg.
+  const catElement = document.getElementById('cat2');
+  if (catElement.complete && catElement.naturalHeight !== 0) {
+    predict(catElement);
+    catElement.style.display = '';
+  } else {
+    catElement.onload = () => {
+      predict(catElement);
+      catElement.style.display = '';
+    }
+  }
   document.getElementById('file-container').style.display = '';
 };
 
