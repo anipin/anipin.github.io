@@ -48,6 +48,43 @@ const demo = async () => {
       catElement2.style.display = '';
     }
   }
+  
+  // Make a prediction through the locally hosted cat.jpg.
+  const catElement3 = document.getElementById('cat3');
+  if (catElement3.complete && catElement3.naturalHeight !== 0) {
+    predict(catElement3);
+    catElement3.style.display = '';
+  } else {
+    catElement3.onload = () => {
+      predict(catElement3);
+      catElement3.style.display = '';
+    }
+  }
+  
+  // Make a prediction through the locally hosted cat.jpg.
+  const catElement4 = document.getElementById('cat4');
+  if (catElement4.complete && catElement4.naturalHeight !== 0) {
+    predict(catElement4);
+    catElement4.style.display = '';
+  } else {
+    catElement4.onload = () => {
+      predict(catElement4);
+      catElement4.style.display = '';
+    }
+  }
+  
+  // Make a prediction through the locally hosted cat.jpg.
+  const catElement5 = document.getElementById('cat5');
+  if (catElement5.complete && catElement5.naturalHeight !== 0) {
+    predict(catElement5);
+    catElement5.style.display = '';
+  } else {
+    catElement5.onload = () => {
+      predict(catElement5);
+      catElement5.style.display = '';
+    }
+  }
+  
   document.getElementById('file-container').style.display = '';
 };
 
